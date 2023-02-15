@@ -7,5 +7,7 @@ import javax.faces.bean.SessionScoped;
 @SessionScoped
 public class KalenderbeanV2 {
 
-
+    public String Openpage(){
+        return "Reservationerstellen";
+    }
 }
