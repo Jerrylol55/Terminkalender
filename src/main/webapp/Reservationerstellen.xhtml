@@ -14,11 +14,31 @@
 
 <h:head>
     <title>Reservation erstellen</title>
-    <br></br>
 </h:head>
 
 <h:body>
-
+<h:form id="form">
+    <h:outputLabel>Datum eingeben:</h:outputLabel>
+    <h:inputText id="Datum" type="date" size="30"></h:inputText>
+    <br></br>
+    <h:outputLabel>Von:</h:outputLabel>
+    <h:inputText id="Von" value="#{kalenderbeanV2.datenbank.aktuell.von}" type="text" size="30"></h:inputText>
+    <br></br>
+    <h:outputLabel>Bis:</h:outputLabel>
+    <h:inputText id="Bis" value="#{kalenderbeanV2.datenbank.aktuell.bis}" type="text" size="30"></h:inputText>
+    <br></br>
+    <h:outputLabel>Bemerkung:</h:outputLabel>
+    <br></br>
+    <h:inputTextarea id="Bemerkung" value="#{kalenderbeanV2.datenbank.aktuell.bemerkung}" type="text" size="30" rows="5" cols="1"></h:inputTextarea>
+    <br></br>
+    <h:outputLabel>Liste der Teilnehmer:</h:outputLabel>
+    <br></br>
+    <h:inputTextarea id="Teilnehmer" type="text" size="30" rows="10" cols="1"></h:inputTextarea>
+    <br></br>
+    <h:commandButton id="submit2" value="Save" action="#{kalenderbeanV2.addReservation()}"/>
+    <h:commandButton value="Zurück" id="Backtoindex" action="/index.xhtml"/>
+    <h:inputText id="key" value="#{kalenderbeanV2.datenbank.aktuell.key}"></h:inputText>
+</h:form>
 </h:body>
 
 </html>

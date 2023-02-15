@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: Jeremias
+  Date: 2/15/2023
+  Time: 3:17 PM
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>Reservation Anzeige</title>
+</h:head>
+
+<h:body>
+    <h:dataTable value="#{kalenderbeanV2.datenbank.reservations}" var="termin" border="1" cellpadding="5">
+        <h:column>
+            #{termin.datum}
+        </h:column>
+        <h:column>
+            #{termin.von}
+        </h:column>
+        <h:column>
+            #{termin.bis}
+        </h:column>
+        <h:column>
+            #{termin.bemerkung}
+        </h:column>
+        <h:column>
+            #{termin.listeVonTeilnehmer}
+        </h:column>
+    </h:dataTable>
+
+    <h:form>
+        <h:commandButton value="Zurück" action="/index.xhtml"/>
+    </h:form>
+</h:body>
+
+</html>
