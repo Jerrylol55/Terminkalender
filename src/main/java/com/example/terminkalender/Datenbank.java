@@ -1,6 +1,7 @@
 package com.example.terminkalender;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Datenbank {
     private ArrayList<Termin> reservations = new ArrayList<Termin>();
@@ -29,4 +30,5 @@ public class Datenbank {
     public void setAktuell(Termin aktuell) {
         this.aktuell = aktuell;
     }
+
 }

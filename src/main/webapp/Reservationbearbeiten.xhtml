@@ -38,11 +38,23 @@
         <h:column>
             Liste von Teilnehmer:#{termin.listeVonTeilnehmer}
         </h:column>
-
     </h:dataTable>
 
+    <h:outputLabel>Datum</h:outputLabel>
+    <h:inputText value="#{termin.datum}"></h:inputText>
+    <h:outputLabel>Von</h:outputLabel>
+    <h:inputText value="#{termin.von}"></h:inputText>
+    <h:outputLabel>Bis</h:outputLabel>
+    <h:inputText value="#{termin.bis}"></h:inputText>
+    <h:outputLabel>Zimmer</h:outputLabel>
+    <h:inputText value="#{termin.zimmer}"></h:inputText>
+    <h:outputLabel>Bemerkung</h:outputLabel>
+    <h:inputText value="#{termin.bemerkung}"></h:inputText>
+    <h:outputLabel>Liste von Teilnehmer</h:outputLabel>
+    <h:inputText>#{}</h:inputText>
+
     <h:form>
-        <h:commandButton value="Zurück" action="/index.xhtml"/>
+        <h:commandButton value="Zurück" action="Reservationanzeigeundbearbeiten.xhtml"/>
     </h:form>
 </h:body>
 

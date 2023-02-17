@@ -22,6 +22,7 @@ import javax.faces.bean.SessionScoped;
         public void setDatenbank(Datenbank datenbank){
             this.datenbank = datenbank;
         }
+
     }
 
 

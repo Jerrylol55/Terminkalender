@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
         import java.text.DateFormat;
         import java.util.Date;
+import java.util.List;
 
 public class Termin {
 
@@ -16,20 +17,23 @@ public class Termin {
      private String Bemerkung;
      private String ListeVonTeilnehmer;
 
+     private String Key;
+
+     private String Datum2;
+
+     public Termin(){
+
+
+     }
+
      public String getKey() {
           return Key;
      }
 
+
      public void setKey(String key) {
           Key = key;
      }
-
-     private String Key;
-
-     public Termin(){
-
-     }
-
 
 
      public String getDatum() {
